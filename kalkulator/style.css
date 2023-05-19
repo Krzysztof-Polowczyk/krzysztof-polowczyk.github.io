@@ -8,11 +8,27 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(8, 60px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    font-size: 40px;
 }
 
+.calculator button {
+    font-size: 25px;
+    grid-column: span 2;
+}
+
+.calculator button.two-columns {
+    grid-column: span 4;
+}
+.calculator button.half-button {
+    grid-column: span 1;
+}
+
+
 .output {
+    position: relative;
+    height: 170px;
     grid-column: 1 / -1;
     display: flex;
     align-items: flex-end;
@@ -21,8 +37,42 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-    background-color: rgb(255 255 255 / 20%);
+    color: #ffffff;
+    font-family: Tahoma;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.two-columns {
-    grid-column: span 2;
+
+/*
+    transition
+*/
+
+p#last {
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+    transition: all 1s;
 }
+
+p#current {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 50px;
+    transition: all 1s;
+}
+
+
+
+/*
+output > p {
+.
+}
+output > p.current {
+    
+}
+output > p.last {
+    
+}
+*/

@@ -9,30 +9,37 @@
     </head>
     <body>
         <div class="calculator">
-            <p class="output">2+3=5</p>
+            <div class="output">
+                <p id="last"></p>
+                <p id="current"></p>
+            </div>
+            <button class="two-columns" data-action="back">Back</button>
+            <button data-action="clear">C</button>
+            <button data-operation="+">+</button>
 
-            <button class="two-columns">C</button>
-            <button>Back</button>
-            <button>+</button>
+            <button data-number="7">7</button>
+            <button data-number="8" >8</button>
+            <button data-number="9" >9</button>
+            <button data-operation="-">-</button>
+                
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-operation="*">*</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-operation="/">/</button>
+
+            <button data-number=".">.</button>
+            <button data-number="0">0</button>
             
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
+            <button data-action="exec">=</button>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>/</button>
-
-            <button>.</button>
-            <button>0</button>
-            <button class="two-columns">=</button>
+            <button class="half-button" data-number="(">(</button>
+            <button class="half-button" data-number=")">)</button>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
