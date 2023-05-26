@@ -1,0 +1,32 @@
+body {
+
+}
+
+.calculator {
+    background-color: rgb(87, 192, 39);
+    display: grid;
+    justify-content: center;
+    min-height: 98vh;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: minmax(200px, auto) repeat(3, 200px);
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: center;
+    
+}
+
+.redPlayButton {
+    color: rgb(255, 0, 0);
+    font-size: 170px;
+}
+.bluePlayButton {
+    color: rgb(0, 81, 255);
+    font-size: 170px;
+}
+.treeColumn{
+    color: rgb(255, 0, 200);
+    font-size: 150px;
+    font-family: cursive;
+    grid-column: span 3
+    
+}
