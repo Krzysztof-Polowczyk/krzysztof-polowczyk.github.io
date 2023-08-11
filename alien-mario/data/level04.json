@@ -1,0 +1,14 @@
+{
+    "platforms": [{"image": "ground", "x": 0, "y": 546}
+    ],
+    "decoration": [
+    ],
+    "coins": [
+    ],
+    "hero": {"x": 21, "y": 525},
+    "spiders": [],
+    "redSpiders": [],
+    "greenSpiders": [],
+    "door": {"x": 903, "y": 546},
+    "key": {"x": 400, "y": 525}
+}
