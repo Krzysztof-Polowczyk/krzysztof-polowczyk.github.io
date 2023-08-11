@@ -228,7 +228,7 @@ PlayState.init = function(data) {
     this.spidersKilled = data.spidersKilled || 0
     this.startSpidersKilled = data.spidersKilled || 0
 
-    this.deadths = data.deaths || 0
+    this.deaths = data.deaths || 0
 
     this.startTime = data.startTime || Date.now()
     this.updateTime = true
@@ -449,7 +449,7 @@ PlayState._createHud = function() {
 Zdobyte monety: ${this.coinPickupCount}
 Zabite pająki: ${this.spidersKilled}
 Czas gry: ${Math.floor((Date.now() - this.startTime) / 1000)} sekund
-Śmierci: ${this.deadths}\n\n
+Śmierci: ${this.deaths}\n\n
 Jeśli chcesz zagrać ponownie, przejdź przez drzwi.`,
         {
             font: "bold 32px Arial",
@@ -504,7 +504,7 @@ PlayState._onHeroVsDoor = function(hero, door) {
             coinPickupCount: this.coinPickupCount,
             startTime: this.finalScreen ?  Date.now() : this.startTime,
             spidersKilled: this.spidersKilled,
-            deadths: this.deadths
+            deaths: this.deaths
         })
     }
 }
@@ -522,7 +522,7 @@ PlayState._onHeroVsEnemy = function(hero, enemy) {
             coinPickupCount: this.startCoinPickupCount,
             startTime: this.startTime,
             spidersKilled: this.startSpidersKilled,
-            deadths: this.deadths + 1
+            deaths: this.deaths + 1
         })
     }
 }
