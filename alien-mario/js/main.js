@@ -296,7 +296,7 @@ PlayState.preload = function() {
 
     this.game.load.json('level:0', 'data/level00.json')
     this.game.load.json('level:1', 'data/level01.json')
-    this.game.load.json('level:2', 'data/level02.json')
+    this.game.load.json('level:2', 'data/level02.json?v=2')
     this.game.load.json('level:3', 'data/level03.json')
     this.game.load.json('level:4', 'data/level04.json')
 }
